@@ -15,6 +15,8 @@ const {
 // router.put('/:id', updatePerson)
 // router.delete('/:id', deletePerson)
 
+// base path './api/people' included in router-app.js 
+// below is adding on it
 router.route('/').get(getPeople).post(createPerson)
 router.route('/postman').post(createPersonPostman)
 router.route('/:id').put(updatePerson).delete(deletePerson)

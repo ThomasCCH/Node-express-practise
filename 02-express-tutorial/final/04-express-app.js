@@ -4,6 +4,7 @@ const path = require('path')
 const app = express()
 
 // setup static and middleware
+// Express will handle all the static rescouces in a new file "public"
 app.use(express.static('./public'))
 
 app.get('/', (req, res) => {
